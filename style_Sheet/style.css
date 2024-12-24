@@ -67,6 +67,9 @@ html{
     background: var(--second-color);
     color: var(--color-white);
 }
+.btn a{
+    text-decoration: none;
+}
 
 /* ----- GLOBAL ICONS DESIGN ----- */
 i{
@@ -177,9 +180,12 @@ nav{
     margin-bottom: 30px;
     color: var(--text-color-second);
 }
-.featured-text-btn{
+.featured-text-btn {
     display: flex;
     gap: 20px;
+}
+.featured-text-btn a{
+    text-decoration: none;
 }
 .featured-text-btn>.blue-btn{
     background: var(--first-color);
@@ -299,7 +305,9 @@ h3{
 .about-btn button:hover{
     background: var(--first-color-hover);
 }
-
+.viewa{
+    color: white;
+}
 /* -----  SKILLS BOX ----- */
 .skills-box{
     margin: 10px;
