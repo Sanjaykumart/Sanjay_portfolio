@@ -1,5 +1,17 @@
+/* --- ## -- Download Code -- ## --- */
+function downloadPDF() {
+    let link = document.createElement("a");
+    link.href = "pdf/SANJAYKUMAR T_B.TECH - IT_2023 -1+year_CV.pdf";
+    link.download = "SANJAYKUMAR T_B.TECH - IT_2023 -1+year_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+document.getElementById("downloadButton").addEventListener("click", downloadPDF);
+
+
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
-const sr = ScrollReveal({
+const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 2000,
@@ -7,9 +19,4 @@ const sr = ScrollReveal({
 })
 
 /* -- HOME -- */
-sr.reveal('.featured-text-card',{})
-sr.reveal('.featured-name',{delay: 100})
-sr.reveal('.featured-text-info',{delay: 200})
-sr.reveal('.featured-text-btn',{delay: 200})
-sr.reveal('.social_icons',{delay: 200})
-sr.reveal('.featured-image',{delay: 300})
+scrollReveal.reveal('.featured-image',{delay: 300})

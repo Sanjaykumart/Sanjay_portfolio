@@ -1,4 +1,12 @@
 
+/* --- Title --- */
+.title-clas{
+    color: brown;
+    background-color: aqua;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+
 /* ----- WRAPPER DESIGN ----- */
 .wrapper{
     padding-inline: 10vw;
