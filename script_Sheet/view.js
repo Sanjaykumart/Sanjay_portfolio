@@ -13,12 +13,9 @@ document.getElementById("downloadButton").addEventListener("click", downloadPDF)
 emailjs.init("your_public_key");
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     event.preventDefault();
-    emailjs.sendForm("your_service_id", "your_template_id", this)
-        .then(function (response) {
-            alert("Email sent successfully!");
-        }, function (error) {
-            alert("Failed to send email. Please try again.");
-        });
+    emailjs.sendForm("service_gmail", "template_sanjaykumarsk1409@gmail.com", this)
+    .then(() => alert("Email sent successfully!"))
+    .catch(() => alert("Failed to send email. Try again."));
 });
 
 
