@@ -1,6 +1,5 @@
-
 /* --- Title --- */
-.title-clas{
+.title-clas {
     color: brown;
     background-color: aqua;
     font-style: normal;
@@ -8,19 +7,19 @@
 }
 
 /* ----- WRAPPER DESIGN ----- */
-.wrapper{
+.wrapper {
     padding-inline: 10vw;
 }
 
 /* ----- FEATURED TEXT BOX ----- */
-.featured-box{
+.featured-box {
     position: relative;
     display: flex;
     height: 50vh;
     min-height: 500px;
 }
 
-.featured-text{
+.featured-text {
     position: relative;
     display: flex;
     justify-content: center;
@@ -31,28 +30,29 @@
     padding-left: 10px;
 }
 
-.featured-name h1{
+.featured-name h1 {
     font-size: 50px;
     font-weight: 500;
     color: var(--text-color-second);
     margin-block: 10px;
 }
 
-.featured-text-info p{
+.featured-text-info p {
     font-size: 15px;
     margin-bottom: 10px;
     color: var(--text-color-second);
 }
 
 /* ----- FEATURED IMAGE BOX ----- */
-.featured-image{
+.featured-image {
     display: flex;
     justify-content: right;
     align-content: center;
     min-height: 50vh;
     width: 50%;
 }
-.image{
+
+.image {
     margin: auto 0;
     width: 380px;
     height: 380px;
@@ -60,25 +60,29 @@
     overflow: auto;
     animation: imgFloat 7s ease-in-out infinite;
 }
- img{
+
+img {
     width: 380px;
     height: 380px;
     border-radius: 50%;
     object-fit: inherit;
 }
+
 @keyframes imgFloat {
-    50%{
+    50% {
         transform: translateY(10px);
         border-radius: 45% 55% 45% 55%;
     }
 }
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
-@media only screen and (max-width: 1024px){
-    .featured-text{
+@media only screen and (max-width: 1024px) {
+    .featured-text {
         padding: 0;
     }
-    .image, .image img{
+
+    .image,
+    .image img {
         width: 320px;
         height: 320px;
     }
