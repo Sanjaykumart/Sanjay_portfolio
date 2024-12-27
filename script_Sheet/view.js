@@ -10,10 +10,10 @@ function downloadPDF() {
 document.getElementById("downloadButton").addEventListener("click", downloadPDF);
 
 /* --- ## -- Mail Send Code -- ## --- */
-emailjs.init("your_public_key");
+emailjs.init("ZP7T3n10n3qbWYhx7");
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     event.preventDefault();
-    emailjs.sendForm("service_gmail", "template_sanjaykumarsk1409@gmail.com", this)
+    emailjs.sendForm("service_69fan3h", "template_iteig2p", this)
     .then(() => alert("Email sent successfully!"))
     .catch(() => alert("Failed to send email. Try again."));
 });
