@@ -13,7 +13,15 @@ document.getElementById("downloadButton").addEventListener("click", downloadPDF)
 emailjs.init("ZP7T3n10n3qbWYhx7");
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     event.preventDefault();
-    emailjs.sendForm("service_69fan3h", "template_iteig2p", this)
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    emailjs.sendForm("service_69fan3h", "template_iteig2p", {
+        to_name : name,
+        from_name : email,
+        message : message
+    })
     .then(() => alert("Email sent successfully!"))
     .catch(() => alert("Failed to send email. Try again."));
 });
